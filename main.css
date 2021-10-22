@@ -1,6 +1,73 @@
+html {
+  font-family: "Open Sans";
+  background-image: url("https://img5.goodfon.com/wallpaper/nbig/f/e1/tsvet-forma-fon-230.jpg");
+}
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 14px;
+  color: beige;
+}
+
 .header {
-   display: block;
-   align-items: center;
-   justify-content: center;
-   
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: beige;
+}
+h1 {
+  font-size: 34px;
+  margin-bottom: 0;
+}
+p {
+  margin-top: 0;
+  font-size: 20px;
+}
+.container {
+  width: 500px;
+  height: auto;
+  background-color: rgba(3, 11, 31, 0.4);
+  padding: 30px;
+  border-radius: 10px;
+}
+#survey-form {
+  display: flex;
+  flex-direction: column;
+}
+input,
+select {
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+#item-label,
+#name-label,
+#email-label,
+#number-label,
+#gender-label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: rgb(231, 240, 243);
+}
+#radio-checkbox,
+#bachelor-input,
+#diploma-input,
+#certeficate-input {
+  margin-right: 10px;
+}
+textarea {
+  margin: 10px 0;
+}
+input[type="checkbox"] {
+  padding: 10px 0;
+}
+#submit {
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: #11682b;
+  color: white;
 }

@@ -4,22 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" src="main.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
     <title>Coding Challenge #2</title>
   </head>
-    <body>
-        <div class="header">
-        <h1 id="title">Microverse Survey Form</h1>
-        <p id="description"><em>This is filling the survey form</em></p>
-        </div>
-
-    <div>
-    
+  <body>
+    <div class="header">
+      <h1 id="title">Microverse Survey Form</h1>
+      <p id="description"><em>This is filling the survey form</em></p>
+    </div>
+    <div class="container">
       <form id="survey-form">
         <label id="name-label">Name</label>
-        <input id="name" type="text" placeholder="Enter your name" />
+        <input id="name" type="text" placeholder="Enter your name" required />
         <label id="email-label">Email</label>
-        <input id="email" type="email" placeholder="Enter your email" />
+        <input
+          id="email"
+          type="email"
+          placeholder="Enter your email"
+          required
+        />
         <label id="number-label">Age(Optional)</label>
         <input
           id="number"
@@ -28,29 +37,63 @@
           max="100"
           min="0"
         />
-        <label>Gender</label>
-        <select id="dropdown">
+
+        <label id="gender-label">Gender</label>
+        <select id="dropdown" required>
           <option>Male</option>
           <option>Female</option>
         </select>
-        <label>What is your level of education?</label>
-        <input type="radio" id="" name="certificate" value="Certificate" >Certificate</input>
-        <input
-          type="radio"
-          id=""
-          name="diploma"
-          value="Diploma"
-        >Diploma</input>
-        <input type="radio" id="" name="bachelors" value="Bachelors Degree" >Bachelors Degree</input>
 
-        <label>What is your work experience?</label>
-        <input type='checkbox' value='5'>0-5 Years</input>
-        <input type='checkbox' value='10'>5-10 Years</input>
-        <input type='checkbox' value='15'>10-15 Years</input>
-        <input type='checkbox' value='20'>Above 15 Years</input> 
-        
-        <label>Any Other Information:</label>
-        <input type="textarea" name="other_info" cols="5" rows="10" placeholder="Enter text here..."></input>
+        <label id="item-label">What is your level of education?</label>
+
+        <label for="certeficate-input"
+          ><input
+            id="certeficate-input"
+            type="radio"
+            name="radio-options"
+            value="Certificate"
+          />Certificate</label
+        >
+        <label for="diploma-input"
+          ><input
+            id="diploma-input"
+            type="radio"
+            name="radio-options"
+            value="Diploma"
+          />Diploma</label
+        >
+        <label for="bachelor-input"
+          ><input
+            id="bachelor-input"
+            type="radio"
+            name="radio-options"
+            value="Bachelor"
+          />Bachelor Degree</label
+        >
+
+        <label id="item-label">What is your work experience?</label>
+        <label>
+          <input id="radio-checkbox" type="checkbox" value="5" />0-5
+          Years</label
+        >
+        <label>
+          <input id="radio-checkbox" type="checkbox" value="10" />5-10
+          Years</label
+        >
+        <label>
+          <input id="radio-checkbox" type="checkbox" value="15" />10-15
+          Years</label
+        >
+        <label>
+          <input id="radio-checkbox" type="checkbox" value="20" />Above 15
+          Years</label
+        >
+
+        <label id="item-label">Any other information:</label>
+        <textarea
+          rows="10"
+          placeholder="Enter your information here."
+        ></textarea>
 
         <button id="submit">Submit</button>
       </form>
